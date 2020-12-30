@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+    backend:
+        image: cedric0010/spring-boot-cedric:latest
+        restart: always
+        expose:
+           - 8080
+        ports:
+           - 8080:8080
+        networks:
+           - some-net
+
+    frontend:
+        image: cedric0010/frontend-job-task:latest
+        restart: always
+        expose:
+            - 4200
+        ports:
+           - 4200:4200
+        depends_on:
+           - backend
+        networks:
+           - some-net
+
+networks:
+    some-net:
+        driver: bridge
