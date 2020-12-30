@@ -3,6 +3,8 @@
 ## Quick Start
 Run `docker-compose up` to pull and start the `frontend` and the `backend` services. If you are on a Linux system, therefore, you need to be a superuser. Afterward, navigate to http://localhost:4200/ and select a region to see the corresponding AWS IP ranges.
 
+#### Hint: Make sure the port 4200 and 8080 are not allocated by some other processes.
+
 ## API Call
 As long as the backend service is running, the following requests can be made:
 http://localhost:8080/ip-ranges.amazonaws?region=X where the variable `X` can be set to: 
