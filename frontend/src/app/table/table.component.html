@@ -1,0 +1,39 @@
+<div class="container"> 
+    <h1>Select region to see AWS IP ranges</h1>
+    <select id="mySelect" (change)="getRegion()">
+      <option selected disabled hidden>Select here</option>
+      <option value="EU">Europe</option>
+      <option value="US">United States</option>
+      <option value="AP">Asia Pacific</option>
+      <option value="CN">China</option>
+      <option value="SA">South America</option>
+      <option value="AF">Africa</option>
+      <option value="CA">Canada</option>
+      <option value="ALL">All available countries</option>
+    </select>
+    <br/><br/>    
+  <!--table-->
+    <table class="table table-striped"> 
+      <thead class="thead-dark">   
+        <tr>
+          <th scope="col">Region</th>
+          <th scope="col">IP Prefix</th>
+          <th scope="col">SynToken</th> 
+          <th scope="col">network_border_group</th> 
+          <th scope="col">Service</th>  
+          <th scope="col">Create Date</th>                     
+        </tr>
+      </thead>
+      <tbody>    
+        <tr class="text-nowrap" *ngFor="let item of Data"> 
+          <th scope="row">{{item.region}}</th>
+          <th>{{item.ip_prefix}}</th>
+          <th>{{item.network_border_group}}</th>
+          <th>{{synctoken}}</th> 
+          <th>{{item.service}}</th>   
+          <th>{{createDate}}</th>          
+        </tr>
+      </tbody>    
+    </table> 
+  </div>
+  
