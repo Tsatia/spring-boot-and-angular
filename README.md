@@ -17,7 +17,7 @@ http://localhost:8080/ip-ranges.amazonaws?region=X where the variable `X` can be
   * ca
   * all
   
-  The arguments are case case insensitive.
+  The arguments are case insensitive.
 
 ## Github Actions
 Folder `.github/workflows` holds the configurations for the Github Actions.  Each push on the `main branch` trickers a build and a test for both the  backend and frontend services.
