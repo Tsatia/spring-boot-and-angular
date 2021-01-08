@@ -1,4 +1,4 @@
-# OTTO-job-application-task
+# Spring-boot-and-angular
 
 ## Quick Start
 Run `docker-compose up` to pull and start the `frontend` and the `backend` services. If you are on a Linux system, therefore, you need to be a superuser. Afterward, navigate to http://localhost:4200/ and select a region to see the corresponding AWS IP ranges.
